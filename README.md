@@ -4,7 +4,7 @@ A script to generate posters on the status of Covid-19 for IEEE MACE SB
 To run: 
 
 ```
-cd ieee-covd-poster-generator/
+cd ieee-covid-poster-generator/
 
 
 ./makeposter.sh
