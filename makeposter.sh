@@ -52,4 +52,4 @@ convert -font ./fonts/Cantarell-Bold.otf -pointsize 20 -gravity North -draw "tex
 	
 x_alapuzha="450"
 y_alapuzha="200"
-convert output.jpg \( ./images/alapuzha_g.png -background none -gravity center \) -gravity northwest -geometry +${x1}+${y1} -composite output.jpg
+convert output.jpg \( ./images/alapuzha_g.png -background none -gravity center \) -gravity northwest -geometry +${x_alapuzha}+${y_alapuzha} -composite output.jpg
