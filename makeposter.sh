@@ -6,7 +6,7 @@
 # These are general information including the 
 # date and the number of active, recovered, deaths and cases
 # These counts come in the right side of the poster in boxes 
-DATE="9 MAY 2020"
+DATE="X MAY 2020"
 ACTIVE=""
 RECOVERED=""
 DEATH=""
@@ -18,10 +18,10 @@ FIX="17:00 Hours"
 # district in the map The count of each district corresponds
 # to each district. 
 # Enter number of cases of each district in each variable here
-KASARGOD="(111)"
-KANNUR="(222)"
-KOZHIKODE="(330)"
-WAYANAD="(444)"
+KASARGOD=""
+KANNUR=""
+KOZHIKODE=""
+WAYANAD=""
 MALAPPURAM=""
 PALAKKAD=""
 THRISSUR=""
