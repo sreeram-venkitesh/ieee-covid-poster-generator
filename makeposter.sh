@@ -6,7 +6,7 @@
 # These are general information including the 
 # date and the number of active, recovered, deaths and cases
 # These counts come in the right side of the poster in boxes 
-DATE="9 MAY 2020"
+DATE="X MAY 2020"
 ACTIVE=""
 RECOVERED=""
 DEATH=""
