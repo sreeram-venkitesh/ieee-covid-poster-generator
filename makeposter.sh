@@ -6,11 +6,12 @@
 # These are general information including the 
 # date and the number of active, recovered, deaths and cases
 # These counts come in the right side of the poster in boxes 
-DATE="16 MAY 2020"
+DATE="X MAY 2020"
 ACTIVE=""
 RECOVERED=""
 DEATH=""
 CASES=""
+FIX="17:00 Hours"
 
 
 # These are the statistics that come under the name of each 
@@ -19,7 +20,7 @@ CASES=""
 # Enter number of cases of each district in each variable here
 KASARGOD=""
 KANNUR=""
-KOZHIKOD=""
+KOZHIKODE=""
 WAYANAD=""
 MALAPPURAM=""
 PALAKKAD=""
@@ -32,6 +33,7 @@ PATHANAMTHITTA=""
 KOLLAM=""
 THIRUVANANTHAPURAM=""
 
+
 # This command is used to enter a piece of text in the blank
 # image and produce an output image. Our plan of action is to
 # add all the necessary data that we want, iteratively into 
@@ -43,8 +45,17 @@ THIRUVANANTHAPURAM=""
 # specified. This coordinates have to selected according to the postiion
 # in the tempalte image. The source and destination image are specified
 # at the end 
-convert -font ./fonts/Cantarell-Bold.otf -pointsize 20 -gravity North -draw "text 450,825 '$DATE'" covid_blank.jpg output.jpg
+convert -font ./fonts/Cantarell-Bold.otf -pointsize 20 -gravity North -fill white -draw "text 440,180 '$DATE'" covid_blank.jpg output.jpg
 
+convert -font ./fonts/Cantarell-Bold.otf -pointsize 20 -gravity North -fill white -draw "text 440,215 '$FIX'" output.jpg output.jpg
+
+convert -font ./fonts/Cantarell-Bold.otf -pointsize 23 -gravity North  -draw "text -370,230  '$KASARGOD'" output.jpg output.jpg
+
+convert -font ./fonts/Cantarell-Bold.otf -pointsize 23 -gravity North  -draw "text -310,345  '$KANNUR'" output.jpg output.jpg
+
+convert -font ./fonts/Cantarell-Bold.otf -pointsize 23 -gravity North  -draw "text -260,445  '$KOZHIKODE'" output.jpg output.jpg
+
+convert -font ./fonts/Cantarell-Bold.otf -pointsize 23 -gravity North  -draw "text 10,340  '$WAYANAD'" output.jpg output.jpg
 
 # The following code is for inserting the an image, in this example 
 # the image of alapuzha, at the location specified by the coordinates
@@ -52,4 +63,4 @@ convert -font ./fonts/Cantarell-Bold.otf -pointsize 20 -gravity North -draw "tex
 	
 x_alapuzha="450"
 y_alapuzha="200"
-convert output.jpg \( ./images/alapuzha_g.png -background none -gravity center \) -gravity northwest -geometry +${x_alapuzha}+${y_alapuzha} -composite output.jpg
+#convert output.jpg \( ./images/alapuzha_g.png -background none -gravity center \) -gravity northwest -geometry +${x_alapuzha}+${y_alapuzha} -composite output.jpg
