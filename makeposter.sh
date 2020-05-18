@@ -103,6 +103,6 @@ convert -font ./fonts/Cantarell-Bold.otf -pointsize 23 -gravity North  -draw "te
 # the image of alapuzha, at the location specified by the coordinates
 # x_alapuzha and y_alapuzha respectively
 	
-x_alapuzha="450"
-y_alapuzha="200"
-#convert output.jpg \( ./images/alapuzha_g.png -background none -gravity center \) -gravity northwest -geometry +${x_alapuzha}+${y_alapuzha} -composite output.jpg
+x_alapuzha="170"
+y_alapuzha="113"
+convert output.jpg \( ./images/KasargodO.png -background none -gravity center \) -gravity northwest -geometry +${x_alapuzha}+${y_alapuzha} -composite output.jpg
